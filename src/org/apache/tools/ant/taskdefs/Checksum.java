@@ -453,7 +453,7 @@ public class Checksum extends MatchingTask implements Condition {
             throw new BuildException(message, getLocation());
         }
     }
-
+// TODO: avoid using unnecessary local variable before returning
     private File getChecksumFile(File file) {
         File directory;
         if (todir != null) {
