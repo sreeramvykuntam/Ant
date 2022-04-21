@@ -620,6 +620,7 @@ public class ModifiedSelectorTest extends BaseSelectorTest {
      *
      * @param algo   configured test object
      */
+    //TODO: avoid instantiating as it wastes memory
     protected void doTest(Comparator comp) {
         Object o1 = new String("string1");
         Object o2 = new String("string2");
