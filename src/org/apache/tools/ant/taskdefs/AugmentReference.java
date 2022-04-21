@@ -38,6 +38,7 @@ public class AugmentReference extends Task implements TypeAdapter {
     /**
      * {@inheritDoc}
      */
+    //TODO: No need to use string.valueof when appending
     public synchronized Object getProxy() {
         if (getProject() == null) {
             throw new IllegalStateException(getTaskName() + "Project owner unset");
