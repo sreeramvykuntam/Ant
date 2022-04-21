@@ -159,7 +159,7 @@ public class Classloader extends Task {
     /**
      * do the classloader manipulation.
      */
-    // TODO: Avoid empty if statements so that program doesnt become slow
+    
     public void execute() {
         try {
             // Gump friendly - don't mess with the core loader if only classpath
@@ -203,10 +203,10 @@ public class Classloader extends Task {
                     parent = this.getClass().getClassLoader();
                 }
 
-                if (name == null) {
+                //if (name == null)
                     // The core loader must be reverse
-                    //reverse=true;
-                }
+                    //reverse=true
+
                 getProject().log("Setting parent loader " + name + " "
                     + parent + " " + parentFirst, Project.MSG_DEBUG);
 
