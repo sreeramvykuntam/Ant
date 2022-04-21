@@ -113,7 +113,7 @@ public class ChecksumAlgorithm implements Algorithm {
      * @param file    File object for which the value should be evaluated.
      * @return        The value for that file
      */
-    
+
     public String getValue(File file) {
         initChecksum();
         String rval = null;
