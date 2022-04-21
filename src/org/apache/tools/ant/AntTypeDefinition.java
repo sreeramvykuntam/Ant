@@ -360,7 +360,7 @@ public class AntTypeDefinition {
      * @param project the current project.
      * @return true if the definitions are the same.
      */
-    //TODO: always use equals() to compare two objects
+
     public boolean similarDefinition(AntTypeDefinition other, Project project) {
         if (other == null
             || getClass() != other.getClass()
@@ -376,7 +376,7 @@ public class AntTypeDefinition {
         // is the same
         ClassLoader oldLoader = other.getClassLoader();
         ClassLoader newLoader = getClassLoader();
-        return oldLoader == newLoader
+        return oldLoader.equals( newLoader)
             || (oldLoader instanceof AntClassLoader
             && newLoader instanceof AntClassLoader
             && ((AntClassLoader) oldLoader).getClasspath()
