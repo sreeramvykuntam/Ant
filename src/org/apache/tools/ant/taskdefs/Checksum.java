@@ -467,7 +467,7 @@ public class Checksum extends MatchingTask implements Condition {
             // This directory will exist
             directory = file.getParentFile();
         }
-        
+
         return new File(directory, file.getName() + fileext);
     }
 
