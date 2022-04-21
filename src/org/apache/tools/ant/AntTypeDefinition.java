@@ -360,6 +360,7 @@ public class AntTypeDefinition {
      * @param project the current project.
      * @return true if the definitions are the same.
      */
+    //TODO: always use equals() to compare two objects
     public boolean similarDefinition(AntTypeDefinition other, Project project) {
         if (other == null
             || getClass() != other.getClass()
