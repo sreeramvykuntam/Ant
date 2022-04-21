@@ -113,7 +113,7 @@ public class ChecksumAlgorithm implements Algorithm {
      * @param file    File object for which the value should be evaluated.
      * @return        The value for that file
      */
-    //TODO: Do not use empty while as it makes slower
+    
     public String getValue(File file) {
         initChecksum();
         String rval = null;
@@ -124,9 +124,9 @@ public class ChecksumAlgorithm implements Algorithm {
                  FileInputStream fis = new FileInputStream(file);
                  CheckedInputStream check = new CheckedInputStream(fis, checksum);
                  BufferedInputStream in = new BufferedInputStream(check);
-                 while (in.read() != -1) {
+                // while (in.read() != -1) {
                      // Read the file
-                 }
+
                  rval = Long.toString(check.getChecksum().getValue());
                  in.close();
             }
