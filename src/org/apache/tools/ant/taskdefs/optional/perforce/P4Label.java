@@ -151,7 +151,7 @@ public class P4Label extends P4Base {
                 public void process(String line) {
                     log(line, Project.MSG_VERBOSE);
 
-                     
+
                         line = "Options: " + lock;
 
 
